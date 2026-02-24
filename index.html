@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portail des Apprenants</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background-glow" aria-hidden="true"></div>
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand__logo">✨</span>
+        <div>
+          <p class="brand__kicker">Espace pédagogique</p>
+          <h1>Portail des Apprenants</h1>
+        </div>
+      </div>
+      <button id="themeToggle" class="button button--ghost" type="button">Mode sombre</button>
+    </header>
+
+    <main class="layout">
+      <section class="hero card">
+        <p class="eyebrow">Bienvenue</p>
+        <h2>Un portail moderne pour apprendre, progresser et collaborer.</h2>
+        <p>
+          Centralisez les modules, suivez les progrès en temps réel et gardez vos apprenants
+          motivés avec une interface claire, dynamique et engageante.
+        </p>
+        <div class="hero__actions">
+          <button class="button">Voir mes modules</button>
+          <button class="button button--secondary">Rejoindre une session</button>
+        </div>
+      </section>
+
+      <section class="stats-grid">
+        <article class="card stat">
+          <p>Modules actifs</p>
+          <h3>12</h3>
+          <small>+2 cette semaine</small>
+        </article>
+        <article class="card stat">
+          <p>Taux de progression</p>
+          <h3>84%</h3>
+          <small>Objectif: 90%</small>
+        </article>
+        <article class="card stat">
+          <p>Sessions live</p>
+          <h3>3</h3>
+          <small>Prochaine à 14h00</small>
+        </article>
+      </section>
+
+      <section class="card modules">
+        <div class="section-title">
+          <h2>Parcours du moment</h2>
+          <span class="pill" id="moduleCounter">3 modules</span>
+        </div>
+        <div class="module-list" id="moduleList"></div>
+      </section>
+
+      <section class="card tools">
+        <div class="section-title">
+          <h2>Outils rapides</h2>
+        </div>
+        <div class="tool-grid">
+          <button class="tool">📚 Bibliothèque</button>
+          <button class="tool">📝 Quiz interactifs</button>
+          <button class="tool">💬 Forum de classe</button>
+          <button class="tool">📆 Agenda des sessions</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Conçu pour favoriser l’autonomie, la régularité et la réussite de vos apprenants.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
